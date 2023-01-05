@@ -1,5 +1,0 @@
-<li th:each="page:${#numbers.sequence(startNumber, endNumber)}" th:class="(${page} == ${boardList.number}+1)?'active'">
-    <a th:href="@{/board/list(page=${page})}" th:text="${page}">
-        <span class="sr-only"></span>
-    </a>
-</li>
